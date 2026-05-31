@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "com.lucifer.kitchen.app-merged_res-40:/menu_main_menu.xml.flat",
+        "source": "com.lucifer.kitchen.app-main-42:/menu/main_menu.xml"
+    },
+    {
+        "merged": "com.lucifer.kitchen.app-merged_res-40:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.lucifer.kitchen.app-main-42:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.lucifer.kitchen.app-merged_res-40:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.lucifer.kitchen.app-main-42:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.lucifer.kitchen.app-merged_res-40:/layout_fragment_translate.xml.flat",
+        "source": "com.lucifer.kitchen.app-main-42:/layout/fragment_translate.xml"
+    },
+    {
+        "merged": "com.lucifer.kitchen.app-merged_res-40:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.lucifer.kitchen.app-main-42:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.lucifer.kitchen.app-merged_res-40:/layout_fragment_home.xml.flat",
+        "source": "com.lucifer.kitchen.app-main-42:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.lucifer.kitchen.app-merged_res-40:/layout_activity_terminal.xml.flat",
+        "source": "com.lucifer.kitchen.app-main-42:/layout/activity_terminal.xml"
+    },
+    {
+        "merged": "com.lucifer.kitchen.app-merged_res-40:/layout_fragment_action_list.xml.flat",
+        "source": "com.lucifer.kitchen.app-main-42:/layout/fragment_action_list.xml"
+    },
+    {
+        "merged": "com.lucifer.kitchen.app-merged_res-40:/layout_activity_main.xml.flat",
+        "source": "com.lucifer.kitchen.app-main-42:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.lucifer.kitchen.app-merged_res-40:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.lucifer.kitchen.app-main-42:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.lucifer.kitchen.app-merged_res-40:/layout_activity_splash.xml.flat",
+        "source": "com.lucifer.kitchen.app-main-42:/layout/activity_splash.xml"
+    }
+]

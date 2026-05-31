@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <com.google.android.material.card.MaterialCardView
+            style="@style/CardStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/auto_repack_title"
+                    android:textColor="@color/text_primary"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/auto_repack_desc"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="13sp"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Select/Deselect All -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSelectAll"
+                style="@style/ActionButtonOutline"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="@string/auto_select_all"
+                android:textSize="12sp"
+                android:layout_marginEnd="4dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDeselectAll"
+                style="@style/ActionButtonOutline"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="@string/auto_deselect_all"
+                android:textSize="12sp"
+                android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+        <!-- Steps Checkboxes -->
+        <com.google.android.material.card.MaterialCardView
+            style="@style/CardStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp">
+
+            <LinearLayout
+                android:id="@+id/stepsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CheckBox android:id="@+id/cbStep1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auto_step_unpack" android:textColor="@color/text_secondary" android:buttonTint="@color/primary_red" android:checked="true"/>
+                <CheckBox android:id="@+id/cbStep2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auto_step_translate" android:textColor="@color/text_secondary" android:buttonTint="@color/primary_red" android:checked="true"/>
+                <CheckBox android:id="@+id/cbStep3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auto_step_patch_vbmeta" android:textColor="@color/text_secondary" android:buttonTint="@color/primary_red" android:checked="true"/>
+                <CheckBox android:id="@+id/cbStep4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auto_step_patch_integrity" android:textColor="@color/text_secondary" android:buttonTint="@color/primary_red" android:checked="true"/>
+                <CheckBox android:id="@+id/cbStep5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auto_step_patch_privapp" android:textColor="@color/text_secondary" android:buttonTint="@color/primary_red" android:checked="true"/>
+                <CheckBox android:id="@+id/cbStep6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auto_step_patch_ota" android:textColor="@color/text_secondary" android:buttonTint="@color/primary_red" android:checked="true"/>
+                <CheckBox android:id="@+id/cbStep7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auto_step_debloat" android:textColor="@color/text_secondary" android:buttonTint="@color/primary_red" android:checked="true"/>
+                <CheckBox android:id="@+id/cbStep8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auto_step_rw" android:textColor="@color/text_secondary" android:buttonTint="@color/primary_red" android:checked="true"/>
+                <CheckBox android:id="@+id/cbStep9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auto_step_decrypt" android:textColor="@color/text_secondary" android:buttonTint="@color/primary_red" android:checked="false"/>
+                <CheckBox android:id="@+id/cbStep10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auto_step_remove_oat" android:textColor="@color/text_secondary" android:buttonTint="@color/primary_red" android:checked="false"/>
+                <CheckBox android:id="@+id/cbStep11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auto_step_repack" android:textColor="@color/text_secondary" android:buttonTint="@color/primary_red" android:checked="true"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Progress -->
+        <com.google.android.material.card.MaterialCardView
+            style="@style/CardStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/cardProgress"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvStepInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_primary"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:progressTint="@color/primary_red"
+                    android:max="100"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Start Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnStartAuto"
+            style="@style/ActionButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/auto_start"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Log -->
+        <com.google.android.material.card.MaterialCardView
+            style="@style/CardStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardLog"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvLog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FF00FF00"
+                android:textSize="11sp"
+                android:fontFamily="monospace"
+                android:maxLines="50"/>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</ScrollView>

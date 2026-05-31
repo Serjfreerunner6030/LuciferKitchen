@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lucifer Kitchen</string>
+    <string name="splash_subtitle">Инструмент для работы с прошивками</string>
+
+    <!-- Tabs -->
+    <string name="tab_home">Главная</string>
+    <string name="tab_unpack">Распаковка</string>
+    <string name="tab_repack">Сборка</string>
+    <string name="tab_patch">Патчи</string>
+    <string name="tab_translate">Перевод</string>
+    <string name="tab_tools">Инструменты</string>
+    <string name="tab_boot">Boot</string>
+    <string name="tab_auto">Авто репак</string>
+    <string name="tab_plugins">Плагины</string>
+    <string name="tab_apk">APK</string>
+    <string name="tab_ai">ИИ</string>
+
+    <!-- Home -->
+    <string name="project_select">Выбрать проект</string>
+    <string name="project_new">Новый проект</string>
+    <string name="project_delete">Удалить проект</string>
+    <string name="project_current">Текущий проект:</string>
+    <string name="project_none">Проект не выбран</string>
+    <string name="project_name_hint">Введите имя проекта</string>
+    <string name="unzip_rom">Распаковать ROM</string>
+    <string name="delete_source">Удалить исходный файл</string>
+    <string name="select_zip">Выберите ZIP файл</string>
+
+    <!-- Unpack -->
+    <string name="unpack_payload">Распаковать payload.bin</string>
+    <string name="unpack_br">Распаковать .dat.br</string>
+    <string name="unpack_dat">Распаковать .dat</string>
+    <string name="unpack_img">Распаковать .img</string>
+    <string name="unpack_super">Распаковать super.img</string>
+    <string name="unpack_zstd">Распаковать .zst</string>
+    <string name="delete_after">Удалить оригинал после завершения</string>
+    <string name="auto_unpack">Автораспаковка извлечённых IMG</string>
+    <string name="select_partition">Выберите раздел</string>
+    <string name="select_file">Выберите файл</string>
+
+    <!-- Repack -->
+    <string name="repack_single">Собрать раздел</string>
+    <string name="repack_super">Собрать super.img</string>
+    <string name="repack_type">Тип сборки</string>
+    <string name="type_ext4">ext4</string>
+    <string name="type_erofs">erofs</string>
+    <string name="type_f2fs">f2fs</string>
+    <string name="format_raw">Raw</string>
+    <string name="format_sparse">Sparse</string>
+    <string name="rw_mode">Режим чтения/записи</string>
+    <string name="auto_size">Авто размер</string>
+    <string name="original_size">Оригинальный размер</string>
+    <string name="compression_level">Уровень сжатия</string>
+    <string name="super_size">Размер super.img (ГБ)</string>
+    <string name="super_group">Имя кластера</string>
+    <string name="partition_type">Тип раздела</string>
+    <string name="ab_type_a">Только A</string>
+    <string name="ab_type_ab">A/B</string>
+    <string name="ab_type_vab">Виртуальный A/B</string>
+
+    <!-- Patch -->
+    <string name="patch_vbmeta">Патч vbmeta</string>
+    <string name="patch_integrity">Исправить Play Integrity</string>
+    <string name="patch_privapp">Патч Priv-App Permissions</string>
+    <string name="patch_ota">Отключить OTA обновления</string>
+    <string name="patch_debloat">Удалить мусор MIUI/HyperOS</string>
+    <string name="patch_rw">Сделать ROM полностью R/W</string>
+    <string name="patch_decrypt">Расшифровка ROM</string>
+    <string name="patch_remove_oat">Удалить OAT</string>
+
+    <!-- Boot Menu -->
+    <string name="boot_unpack">Распаковка Boot</string>
+    <string name="boot_repack">Сборка Boot</string>
+    <string name="boot_patch_magisk">Патч Magisk</string>
+    <string name="boot_patch_verity">Отключить dm-verity</string>
+    <string name="boot_extract_ramdisk">Извлечь Ramdisk</string>
+    <string name="boot_extract_kernel">Извлечь Kernel</string>
+    <string name="boot_info">Информация Boot</string>
+
+    <!-- Jar Patches -->
+    <string name="patch_core_dsv">Core patch — DSV</string>
+    <string name="patch_core_dsv_desc">Включает прямую установку системных приложений, обходя полную проверку подписи</string>
+    <string name="patch_remove_apk_prot">Удалить защиту APK</string>
+    <string name="patch_remove_apk_prot_desc">Отключает встроенную защиту APK в стоковых прошивках, позволяя беспрепятственно заменять модифицированные системные приложения</string>
+    <string name="patch_disable_secure_ss">Отключить защиту скриншотов</string>
+    <string name="patch_disable_secure_ss_desc">Снимает ограничения на скриншоты и запись экрана для всех приложений. Обычно при записи некоторых приложений экран заменяется чёрной областью. Это может быть удобно, но может привести к утечке конфиденциальных данных.</string>
+    <string name="select_android_version">Выберите версию Android:</string>
+    <string name="select_rom_type">Выберите тип прошивки:</string>
+    <string name="rom_aosp">AOSP / Кастомная прошивка</string>
+    <string name="rom_miui">MIUI</string>
+    <string name="rom_hyperos">HyperOS</string>
+
+    <!-- Convert -->
+    <string name="convert_img_simg">IMG в Sparse IMG</string>
+    <string name="convert_img_dat">IMG в DAT/BR</string>
+    <string name="convert_zst">Конвертация ZST-IMG</string>
+    <string name="merge_sparse">Объединить Sparse сегменты</string>
+
+    <!-- Translate -->
+    <string name="translate_title">Перевод прошивки</string>
+    <string name="translate_desc">Перевод строк прошивки на русский язык</string>
+    <string name="translate_scan">Сканировать файлы для перевода</string>
+    <string name="translate_start">Начать перевод</string>
+    <string name="translate_progress">Прогресс перевода</string>
+    <string name="translate_source">Исходный язык</string>
+    <string name="translate_target">Целевой язык</string>
+    <string name="translate_files_found">Найдено файлов для перевода: %d</string>
+    <string name="translate_complete">Перевод завершён!</string>
+    <string name="translate_strings_xml">Перевести файлы strings.xml</string>
+    <string name="translate_arrays_xml">Перевести файлы arrays.xml</string>
+    <string name="translate_overlay">Создать overlay APK</string>
+    <string name="lang_auto">Автоопределение</string>
+    <string name="lang_en">Английский</string>
+    <string name="lang_zh">Китайский</string>
+    <string name="lang_ru">Русский</string>
+
+    <!-- Tools -->
+    <string name="extract_partition">Извлечь раздел</string>
+    <string name="flash_partition">Прошить раздел</string>
+    <string name="script_executor">Выполнение скриптов</string>
+    <string name="terminal">Терминал</string>
+    <string name="custom_command">Пользовательская команда</string>
+    <string name="reboot_after">Перезагрузить после прошивки</string>
+
+    <!-- Auto Repack -->
+    <string name="auto_repack_title">Авто репак</string>
+    <string name="auto_repack_desc">Полный цикл: Распаковка → Перевод → Патчи → Сборка</string>
+    <string name="auto_step_unpack">1. Распаковка разделов ROM</string>
+    <string name="auto_step_translate">2. Авто перевод на русский</string>
+    <string name="auto_step_patch_vbmeta">3. Патч vbmeta</string>
+    <string name="auto_step_patch_integrity">4. Исправить Play Integrity</string>
+    <string name="auto_step_patch_privapp">5. Патч Priv-App Permissions</string>
+    <string name="auto_step_patch_ota">6. Отключить OTA обновления</string>
+    <string name="auto_step_debloat">7. Удалить мусор MIUI/HyperOS</string>
+    <string name="auto_step_rw">8. Сделать ROM полностью R/W</string>
+    <string name="auto_step_decrypt">9. Расшифровка ROM</string>
+    <string name="auto_step_remove_oat">10. Удалить OAT файлы</string>
+    <string name="auto_step_repack">11. Собрать разделы</string>
+    <string name="auto_start">Запустить авто репак</string>
+    <string name="auto_running_step">Шаг %1$d из %2$d: %3$s</string>
+    <string name="auto_complete">Авто репак завершён!</string>
+    <string name="auto_select_steps">Выберите шаги для выполнения:</string>
+    <string name="auto_select_all">Выбрать все</string>
+    <string name="auto_deselect_all">Снять все</string>
+
+    <!-- Plugins (DNA-style) -->
+    <string name="plugins_title">Плагины</string>
+    <string name="plugins_desc">Импорт локальных плагинов через .zip2 или .mpk файлы (совместимо с DNA)</string>
+    <string name="plugins_import">Импорт плагина (.mpk)</string>
+    <string name="plugins_none">Нет установленных плагинов</string>
+    <string name="plugins_installed">Список плагинов</string>
+    <string name="plugins_delete">Удалить плагин</string>
+    <string name="plugins_run">Запустить</string>
+    <string name="plugins_invalid">Недопустимый файл плагина</string>
+    <string name="plugins_imported">Плагин успешно импортирован</string>
+    <string name="plugins_select_mpk">Выберите файл .mpk</string>
+    <string name="plugins_select_delete">Выберите плагины для удаления:</string>
+    <string name="plugins_removed">Плагин удалён</string>
+
+    <!-- Common -->
+    <string name="run">Запустить</string>
+    <string name="cancel">Отмена</string>
+    <string name="ok">ОК</string>
+    <string name="error">Ошибка</string>
+    <string name="success">Успешно</string>
+    <string name="warning">Внимание</string>
+    <string name="running">Выполняется…</string>
+    <string name="done">Готово</string>
+    <string name="no_root">Требуется root-доступ</string>
+    <string name="no_project">Сначала выберите проект</string>
+    <string name="confirm_delete">Вы уверены, что хотите удалить?</string>
+    <string name="select_files_hint">Поместите файлы в папку проекта /sdcard/LuciferKitchen</string>
+
+    <!-- About -->
+    <string name="about_title">О приложении</string>
+    <string name="about_desc">Lucifer Kitchen v1.0\nИнструмент для работы с прошивками Android</string>
+    <string name="disclaimer">Приложение не несёт ответственности за повреждения устройства. Используйте на свой страх и риск.</string>
+
+    <!-- APK Menu -->
+    <string name="apk_title">Инструменты APK</string>
+    <string name="apk_desc">Декомпиляция, патчинг, пересборка и подпись APK файлов</string>
+    <string name="apk_decompile">Декомпилировать APK</string>
+    <string name="apk_decompile_desc">Разобрать APK на smali, ресурсы и манифест через apktool</string>
+    <string name="apk_recompile">Собрать APK</string>
+    <string name="apk_recompile_desc">Пересобрать APK из декомпилированных исходников</string>
+    <string name="apk_sign">Подписать APK</string>
+    <string name="apk_sign_desc">Подписать APK тестовым ключом для установки</string>
+    <string name="apk_zipalign">Zipalign APK</string>
+    <string name="apk_zipalign_desc">Оптимизация выравнивания APK для лучшей производительности</string>
+    <string name="apk_install">Установить APK</string>
+    <string name="apk_install_desc">Установить APK на устройство через pm</string>
+    <string name="apk_extract">Извлечь с устройства</string>
+    <string name="apk_extract_desc">Извлечь установленный APK с устройства по имени пакета</string>
+    <string name="apk_info">Информация об APK</string>
+    <string name="apk_info_desc">Показать пакет, разрешения, активити APK</string>
+    <string name="apk_select">Выберите APK файл</string>
+    <string name="apk_select_dir">Выберите папку декомпилированного APK</string>
+    <string name="apk_package_hint">Имя пакета (напр. com.android.settings)</string>
+    <string name="apk_patches_title">Патчи APK</string>
+    <string name="apk_patch_disable_sig">Отключить проверку подписи</string>
+    <string name="apk_patch_disable_sig_desc">Убрать верификацию подписи для установки модифицированного APK поверх оригинала</string>
+    <string name="apk_patch_debuggable">Сделать отладочным</string>
+    <string name="apk_patch_debuggable_desc">Установить android:debuggable=true в манифесте для отладки</string>
+    <string name="apk_patch_allow_backup">Включить бэкап</string>
+    <string name="apk_patch_allow_backup_desc">Установить android:allowBackup=true в манифесте</string>
+    <string name="apk_patch_remove_ads">Удалить рекламу</string>
+    <string name="apk_patch_remove_ads_desc">Удалить классы рекламных SDK (AdMob, Facebook Ads, Unity Ads, AppLovin)</string>
+    <string name="apk_patch_disable_analytics">Отключить аналитику</string>
+    <string name="apk_patch_disable_analytics_desc">Удалить Firebase Analytics, Crashlytics и другие трекеры</string>
+    <string name="apk_patch_force_fullscreen">Полноэкранный режим</string>
+    <string name="apk_patch_force_fullscreen_desc">Убрать статус бар и навигацию для всех активити</string>
+    <string name="apk_patch_disable_ssl">Отключить SSL pinning</string>
+    <string name="apk_patch_disable_ssl_desc">Обойти привязку SSL сертификатов для перехвата трафика</string>
+    <string name="apk_patch_max_target_sdk">Изменить targetSdkVersion</string>
+    <string name="apk_patch_max_target_sdk_desc">Изменить targetSdkVersion в манифесте для обхода ограничений API</string>
+    <string name="apk_patch_remove_splash">Убрать сплэш-экран</string>
+    <string name="apk_patch_remove_splash_desc">Удалить экран загрузки приложения</string>
+    <string name="apk_patch_custom_smali">Пользовательский smali патч</string>
+    <string name="apk_patch_custom_smali_desc">Применить свои smali модификации через поиск и замену</string>
+    <string name="apk_smali_find_hint">Smali паттерн для поиска</string>
+    <string name="apk_smali_replace_hint">Заменить на</string>
+    <string name="apk_target_sdk_hint">Target SDK версия (напр. 28)</string>
+
+    <!-- AI Assistant (Kai-style) -->
+    <string name="ai_title">ИИ Ассистент</string>
+    <string name="ai_desc">ИИ с полным доступом к проекту: чтение, редактирование, выполнение команд</string>
+    <string name="ai_provider">Провайдер ИИ</string>
+    <string name="ai_provider_openai">OpenAI</string>
+    <string name="ai_provider_gemini">Google Gemini</string>
+    <string name="ai_provider_ollama">Ollama (локальный)</string>
+    <string name="ai_provider_custom">Свой сервер</string>
+    <string name="ai_api_key_hint">API ключ</string>
+    <string name="ai_endpoint_hint">URL сервера</string>
+    <string name="ai_model_hint">Имя модели</string>
+    <string name="ai_save_settings">Сохранить</string>
+    <string name="ai_settings_saved">Настройки ИИ сохранены</string>
+    <string name="ai_send">Отправить</string>
+    <string name="ai_thinking">Думаю...</string>
+    <string name="ai_error_no_key">Сначала укажите API ключ</string>
+    <string name="ai_error_no_project">Откройте проект, чтобы ИИ видел файлы</string>
+    <string name="ai_context_files">Файлов в проекте: %d</string>
+    <string name="ai_cmd_read">/read &lt;файл&gt; — прочитать файл</string>
+    <string name="ai_cmd_edit">/edit &lt;файл&gt; — редактировать файл</string>
+    <string name="ai_cmd_exec">/exec &lt;команда&gt; — выполнить команду</string>
+    <string name="ai_cmd_tree">/tree — структура проекта</string>
+    <string name="ai_cmd_help">/help — показать команды</string>
+    <string name="ai_system_prompt">Ты эксперт по модификации Android ROM. У тебя есть доступ к файлам проекта пользователя. Ты можешь читать, редактировать и создавать файлы. Можешь запускать shell команды. Анализируй smali код, манифесты, ресурсы. Предлагай патчи и модификации. Отвечай на языке пользователя.</string>
+
+    <!-- Kai AI extras -->
+    <string name="ai_new_chat">Новый чат</string>
+    <string name="ai_history">История чатов</string>
+    <string name="ai_delete_chat">Удалить чат</string>
+    <string name="ai_clear_all">Очистить всё</string>
+    <string name="ai_no_history">Нет разговоров</string>
+    <string name="ai_tool_calling">Вызов инструментов включён</string>
+    <string name="ai_tool_executing">Выполняю: %s</string>
+    <string name="ai_tool_result">Результат инструмента</string>
+    <string name="ai_free_mode">Бесплатно (без API ключа)</string>
+    <string name="ai_select_provider">Выберите провайдер ИИ</string>
+    <string name="ai_welcome">Привет! Я ваш ИИ ассистент с полным доступом к ROM проекту.\n\nЯ могу:\n• Читать и редактировать файлы проекта\n• Выполнять shell команды\n• Анализировать smali код и манифесты\n• Предлагать патчи для ROM\n\nЛокальные команды: /tree /read /exec /help</string>
+    <string name="ai_conversations">Разговоры</string>
+    <string name="ai_tools_used">Инструментов использовано: %d</string>
+</resources>

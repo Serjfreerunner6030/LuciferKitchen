@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_dark">
+
+    <!-- Top bar: provider info + buttons -->
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="44dp"
+        android:orientation="horizontal" android:gravity="center_vertical"
+        android:background="@color/surface_dark" android:paddingStart="12dp" android:paddingEnd="8dp">
+
+        <TextView android:id="@+id/tvProviderInfo"
+            android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+            android:textColor="@color/text_secondary" android:textSize="12sp"
+            android:singleLine="true" android:ellipsize="end"/>
+
+        <ImageButton android:id="@+id/btnNewChat"
+            android:layout_width="36dp" android:layout_height="36dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_add" android:contentDescription="New chat"
+            android:tint="@color/text_secondary" android:layout_marginEnd="4dp"/>
+
+        <ImageButton android:id="@+id/btnHistory"
+            android:layout_width="36dp" android:layout_height="36dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_recent_history" android:contentDescription="History"
+            android:tint="@color/text_secondary" android:layout_marginEnd="4dp"/>
+
+        <ImageButton android:id="@+id/btnToggleSettings"
+            android:layout_width="36dp" android:layout_height="36dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_manage" android:contentDescription="Settings"
+            android:tint="@color/text_secondary"/>
+    </LinearLayout>
+
+    <!-- Settings panel (collapsible) -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardSettings"
+        style="@style/CardStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="@string/ai_select_provider"
+                android:textColor="@color/text_secondary" android:textSize="12sp"
+                android:layout_marginBottom="4dp"/>
+
+            <Spinner android:id="@+id/spinnerProvider"
+                android:layout_width="match_parent" android:layout_height="44dp"
+                android:backgroundTint="@color/text_secondary"/>
+
+            <EditText android:id="@+id/etApiKey"
+                android:layout_width="match_parent" android:layout_height="44dp"
+                android:hint="@string/ai_api_key_hint" android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_hint" android:backgroundTint="@color/text_hint"
+                android:textSize="13sp" android:inputType="textPassword" android:layout_marginTop="8dp"/>
+
+            <EditText android:id="@+id/etEndpoint"
+                android:layout_width="match_parent" android:layout_height="44dp"
+                android:hint="@string/ai_endpoint_hint" android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_hint" android:backgroundTint="@color/text_hint"
+                android:textSize="13sp" android:layout_marginTop="4dp"/>
+
+            <EditText android:id="@+id/etModel"
+                android:layout_width="match_parent" android:layout_height="44dp"
+                android:hint="@string/ai_model_hint" android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_hint" android:backgroundTint="@color/text_hint"
+                android:textSize="13sp" android:layout_marginTop="4dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSaveSettings"
+                style="@style/ActionButton"
+                android:layout_width="match_parent" android:layout_height="40dp"
+                android:text="@string/ai_save_settings" android:textSize="13sp"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Context info bar -->
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="28dp"
+        android:orientation="horizontal" android:gravity="center_vertical"
+        android:background="#0AFFFFFF" android:paddingStart="12dp" android:paddingEnd="12dp">
+
+        <TextView android:id="@+id/tvContextInfo"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textColor="@color/text_hint" android:textSize="10sp"/>
+
+        <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+
+        <TextView android:id="@+id/tvToolStatus"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/ai_tool_calling" android:textColor="#FF4CAF50"
+            android:textSize="10sp"/>
+    </LinearLayout>
+
+    <!-- Chat messages -->
+    <ScrollView
+        android:id="@+id/scrollChat"
+        android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+
+        <LinearLayout android:id="@+id/chatContainer"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="8dp"/>
+    </ScrollView>
+
+    <!-- Input bar -->
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:background="@color/surface_dark"
+        android:padding="8dp">
+
+        <EditText android:id="@+id/etMessage"
+            android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+            android:hint="..." android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_hint" android:background="@color/card_dark"
+            android:padding="10dp" android:textSize="14sp" android:minHeight="44dp"
+            android:maxLines="5" android:inputType="textMultiLine"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSend"
+            style="@style/ActionButton"
+            android:layout_width="wrap_content" android:layout_height="44dp"
+            android:text="@string/ai_send" android:layout_marginStart="8dp"/>
+    </LinearLayout>
+</LinearLayout>

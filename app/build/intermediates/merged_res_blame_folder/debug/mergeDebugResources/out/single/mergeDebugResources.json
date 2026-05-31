@@ -1,0 +1,66 @@
+[
+    {
+        "merged": "com.lucifer.kitchen.app-debug-40:/layout_fragment_ai.xml.flat",
+        "source": "com.lucifer.kitchen.app-main-42:/layout/fragment_ai.xml"
+    },
+    {
+        "merged": "/home/user/.gradle/daemon/8.7/com.lucifer.kitchen.app-debug-40:/layout_fragment_translate.xml.flat",
+        "source": "/home/user/.gradle/daemon/8.7/com.lucifer.kitchen.app-main-42:/layout/fragment_translate.xml"
+    },
+    {
+        "merged": "/home/user/.gradle/daemon/8.7/com.lucifer.kitchen.app-debug-40:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/home/user/.gradle/daemon/8.7/com.lucifer.kitchen.app-main-42:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/user/.gradle/daemon/8.7/com.lucifer.kitchen.app-debug-40:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/home/user/.gradle/daemon/8.7/com.lucifer.kitchen.app-main-42:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/user/.gradle/daemon/8.7/com.lucifer.kitchen.app-debug-40:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/home/user/.gradle/daemon/8.7/com.lucifer.kitchen.app-main-42:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/user/.gradle/daemon/8.7/com.lucifer.kitchen.app-debug-40:/layout_fragment_home.xml.flat",
+        "source": "/home/user/.gradle/daemon/8.7/com.lucifer.kitchen.app-main-42:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "/home/user/.gradle/daemon/8.7/com.lucifer.kitchen.app-debug-40:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/home/user/.gradle/daemon/8.7/com.lucifer.kitchen.app-main-42:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/user/.gradle/daemon/8.7/com.lucifer.kitchen.app-debug-40:/layout_fragment_plugins.xml.flat",
+        "source": "/home/user/.gradle/daemon/8.7/com.lucifer.kitchen.app-main-42:/layout/fragment_plugins.xml"
+    },
+    {
+        "merged": "/home/user/.gradle/daemon/8.7/com.lucifer.kitchen.app-debug-40:/layout_activity_terminal.xml.flat",
+        "source": "/home/user/.gradle/daemon/8.7/com.lucifer.kitchen.app-main-42:/layout/activity_terminal.xml"
+    },
+    {
+        "merged": "/home/user/.gradle/daemon/8.7/com.lucifer.kitchen.app-debug-40:/layout_fragment_action_list.xml.flat",
+        "source": "/home/user/.gradle/daemon/8.7/com.lucifer.kitchen.app-main-42:/layout/fragment_action_list.xml"
+    },
+    {
+        "merged": "/home/user/.gradle/daemon/8.7/com.lucifer.kitchen.app-debug-40:/layout_fragment_auto_repack.xml.flat",
+        "source": "/home/user/.gradle/daemon/8.7/com.lucifer.kitchen.app-main-42:/layout/fragment_auto_repack.xml"
+    },
+    {
+        "merged": "/home/user/.gradle/daemon/8.7/com.lucifer.kitchen.app-debug-40:/layout_activity_splash.xml.flat",
+        "source": "/home/user/.gradle/daemon/8.7/com.lucifer.kitchen.app-main-42:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "/home/user/.gradle/daemon/8.7/com.lucifer.kitchen.app-debug-40:/layout_fragment_ai.xml.flat",
+        "source": "/home/user/.gradle/daemon/8.7/com.lucifer.kitchen.app-main-42:/layout/fragment_ai.xml"
+    },
+    {
+        "merged": "/home/user/.gradle/daemon/8.7/com.lucifer.kitchen.app-debug-40:/layout_fragment_apk.xml.flat",
+        "source": "/home/user/.gradle/daemon/8.7/com.lucifer.kitchen.app-main-42:/layout/fragment_apk.xml"
+    },
+    {
+        "merged": "/home/user/.gradle/daemon/8.7/com.lucifer.kitchen.app-debug-40:/menu_main_menu.xml.flat",
+        "source": "/home/user/.gradle/daemon/8.7/com.lucifer.kitchen.app-main-42:/menu/main_menu.xml"
+    },
+    {
+        "merged": "/home/user/.gradle/daemon/8.7/com.lucifer.kitchen.app-debug-40:/layout_activity_main.xml.flat",
+        "source": "/home/user/.gradle/daemon/8.7/com.lucifer.kitchen.app-main-42:/layout/activity_main.xml"
+    }
+]
